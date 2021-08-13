@@ -6,7 +6,7 @@ int checaarray (int * vetor,int tam) {
     int i;
     for (i = 1; i <= tam - 1; i++) {
         if (vetor[i-1] > vetor[i]) {
-                printf("N√O ORDENADO! \n");
+                printf("N√ÉO ORDENADO! \n");
                 return i;
         }
     }
@@ -123,7 +123,6 @@ int main(){
         //printf("numero %d \n",A[i]);
         i++;
     }
-    printf("gay\n");
     //printarray(A, tam);
     checaarray(A,tam);
     double starttime = omp_get_wtime();
@@ -132,7 +131,7 @@ int main(){
     double tt = (double) (endtime - starttime);
     //printarray(A, tam);
     int aa = checaarray(A,tam);
-    if (aa != -1) printf("ÕNDICE DO ERRO: %d",aa);
+    if (aa != -1) printf("√çNDICE DO ERRO: %d",aa);
     printf("tempo: %f",tt);
     return 1;
 }
