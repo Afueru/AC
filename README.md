@@ -1,2 +1,1 @@
-# AC
-Arquitetura de Computadores
+# AC - Arquitetura de Computadores
